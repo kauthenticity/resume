@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, Introduce, WorkExperience } from "./components";
+import { Header, Introduce, WorkExperience, Strength } from "./components";
 function App() {
   return (
     <>
@@ -7,6 +7,7 @@ function App() {
       <main>
         <Introduce />
         <WorkExperience />
+        <Strength />
       </main>
     </>
   );

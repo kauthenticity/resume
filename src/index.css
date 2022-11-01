@@ -1,26 +1,13 @@
 @font-face {
-  font-family: "Pretendard-Regular";
-  src: url("./static/fonts/Pretendard-Regular.woff2") format("woff2");
+  font-family: "Pretendard Variable";
+  font-weight: 100 900;
+  src: url("./static/fonts/PretendardVariable.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "Pretendard-Medium";
-  src: url("./static/fonts/Pretendard-Medium.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Pretendard-SemiBold";
-  src: url("./static/fonts/Pretendard-SemiBold.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Pretendard-Bold";
-  src: url("./static/fonts/Pretendard-Bold.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Pretendard-Light";
-  src: url("./static/fonts/Pretendard-Light.woff2") format("woff2");
+  font-family: "Lexend Variable";
+  font-weight: 100 900;
+  src: url("./static/fonts/Lexend-VariableFont_wght.ttf") format("truetype");
 }
 
 :root {
@@ -38,7 +25,8 @@
 
 body {
   margin: 0;
-  font-family: "Pretendard-Medium";
+  font-family: "Pretendard Variable";
+  font-weight: 500;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding: 0px 20px;
@@ -50,8 +38,17 @@ body {
 
 h1 {
   font-size: 2rem;
-  font-family: "Pretendard-SemiBold";
+  font-family: "Lexend Variable";
+  font-weight: 700;
+  font-weight: none;
   letter-spacing: -1px;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 .highlight {
@@ -60,4 +57,26 @@ h1 {
 a {
   text-decoration: none;
   color: var(--gray900);
+}
+
+main {
+  padding-top: 4rem;
+}
+
+table {
+  width: 100%;
+}
+.underline {
+  position: relative;
+}
+.underline::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  height: 12px;
+  width: 105%;
+  bottom: 0px;
+  background-color: var(--main);
+  opacity: 0.5;
+  left: 0;
 }
