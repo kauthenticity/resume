@@ -77,7 +77,7 @@ a {
 
 main {
   padding: 0 1.5rem;
-  margin-top: 4rem;
+  margin-top: 6rem;
 }
 
 table {
@@ -115,4 +115,13 @@ section.container {
 
 section.subContainer {
   margin-bottom: 2rem;
+}
+
+svg {
+  margin-top: 3px;
+}
+
+.table {
+  color: var(--gray900);
+  margin: 0;
 }

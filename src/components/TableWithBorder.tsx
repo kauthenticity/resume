@@ -10,9 +10,11 @@ export const TableWithBorder = ({ tableElements }: TableWithBorderProps) => {
     <Table>
       <thead></thead>
       <Tbody>
-        {tableElements.map(({ label, description, isLink }) => (
-          <Tr>
-            <Td className="label">{label}</Td>
+        {tableElements.map(({ label, description, isLink }, idx) => (
+          <Tr key={idx + label}>
+            <Td className="label" style={{ width: "8rem" }}>
+              {label}
+            </Td>
             <Td>
               {isLink ? <a href={description}>{description}</a> : description}
             </Td>

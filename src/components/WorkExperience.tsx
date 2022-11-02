@@ -12,6 +12,10 @@ export const WorkExperience = () => {
         introduce="Microsoft사의 Dynamics365를 바탕으로 한 CRM 개발"
         role="프론트엔드 인턴"
         techStack="Vanila.JS, HTML5, Vue, Angular"
+        description={[
+          "SM C&C, 율촌 등 CRM 구축 및 개발",
+          "브라우저 렌더링 과정 이해를 바탕으로 커스텀 CRM 삽입",
+        ]}
       />
       <Project
         name="한입"
@@ -21,6 +25,10 @@ export const WorkExperience = () => {
         techStack="React-Native, Typescript, Redux-Toolkit, React-Query, Firebase"
         contribution="90%"
         style={{ marginTop: "1rem" }}
+        github="https://github.com/cmc-glory/hannib-frontend"
+        notion="https://kauthenticity.notion.site/74ccaf1f81f64fe194edad325ef3910e"
+        appStore="https://apps.apple.com/kr/app/%ED%95%9C%EC%9E%85-hannip/id1635377027"
+        playStore="https://play.google.com/store/apps/details?id=com.hannib"
       />
       <Project
         name="밥타"
@@ -30,6 +38,9 @@ export const WorkExperience = () => {
         techStack="React, Typescript, React-Query, Google Analytics, AWS S3"
         contribution="100%"
         style={{ marginTop: "1rem" }}
+        notion="https://kauthenticity.notion.site/906deec27e424c1bb4e6d51b212602e0"
+        url="http://bob-ta.com/index"
+        github="https://github.com/kauthenticity/bob-ta"
       />
     </section>
   )
