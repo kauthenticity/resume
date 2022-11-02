@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { Duration } from "./Duration"
 
 type ProjectProps = {
   name: string
@@ -7,7 +8,7 @@ type ProjectProps = {
   introduce: string
   role: string
   techStack: string
-  contribution: string
+  contribution?: string
   style?: React.CSSProperties
 }
 
@@ -21,9 +22,9 @@ export const Project = ({
   style,
 }: ProjectProps) => {
   return (
-    <section style={style}>
+    <section style={style} className="subContainer">
       <h2>{name}</h2>
-      <Duration>{duration}</Duration>
+      <Duration duration={duration}></Duration>
       <Table>
         <thead></thead>
         <Tbody>
@@ -39,27 +40,27 @@ export const Project = ({
             <Td className="label">기술 스택</Td>
             <Td>{techStack}</Td>
           </Tr>
-          <Tr>
-            <Td className="label">기여도</Td>
-            <Td>{contribution}</Td>
-          </Tr>
+          {contribution && (
+            <Tr>
+              <Td className="label">기여도</Td>
+              <Td>{contribution}</Td>
+            </Tr>
+          )}
         </Tbody>
       </Table>
     </section>
   )
 }
-const Duration = styled.div`
-  color: var(--gray600);
-  margin-top: 0.75rem;
-`
+
 const Table = styled.table`
-  margin-top: 1rem;
+  margin-top: 0.75rem;
+  border-collapse: collapse;
 `
 const Td = styled.td`
   &.label {
     color: var(--gray600);
   }
-  padding: 0.4rem 0;
+  padding: 0.3rem 0;
 `
 
 const Tr = styled.tr``
