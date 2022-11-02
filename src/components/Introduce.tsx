@@ -25,7 +25,11 @@ export const Introduce = () => {
             isLink: true,
           },
           { label: "Email", description: "kauthenticity@gmail.com" },
-          { label: "Mobile", description: "010-2229-7345" },
+          {
+            label: "Velog",
+            description: "https://velog.io/@kauthenticity",
+            isLink: true,
+          },
         ]}
       />
     </section>
