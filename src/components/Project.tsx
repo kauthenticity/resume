@@ -60,7 +60,7 @@ export const Project = ({
           </tr>
           {contribution && (
             <tr>
-              <Td className="label">기여도</Td>
+              <Td className="label">역할 기여도</Td>
               <Td>{contribution}</Td>
             </tr>
           )}
