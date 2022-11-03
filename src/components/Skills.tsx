@@ -40,7 +40,7 @@ export const Skills = () => {
       <section className="subContainer">
         <h2>Javascript, Typescript</h2>
         <ul>
-          <li>- es6 문법을 사용해서 원하는 코드를 편하게 작성할 수 있어요.</li>
+          <li>- ES6 문법을 사용해서 원하는 코드를 편하게 작성할 수 있어요.</li>
           <li>
             - React에서 객체에 타입을 지정해서 코드를 빠르게 작성하고 에러를
             방지할 수 있어요.
@@ -50,10 +50,10 @@ export const Skills = () => {
       <section className="subContainer">
         <h2>Python</h2>
         <ul>
-          <li>- 알고리즘 문제를 python을 사용해서 풀 수 있어요.</li>
+          <li>- 알고리즘 문제를 Python을 사용해서 풀 수 있어요.</li>
           <li>
-            - colab을 활용하여 Linear Regression, PCA 문제 등을 해결할 수
-            있어요.{" "}
+            - Colab을 활용하여 Linear Regression, PCA 문제 등을 해결할 수
+            있어요.
           </li>
         </ul>
       </section>
