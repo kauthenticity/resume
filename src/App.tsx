@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Header,
   Introduce,
@@ -8,7 +7,7 @@ import {
   Educations,
   Etc,
   Footer,
-} from "./components";
+} from "./components"
 function App() {
   return (
     <>
@@ -23,7 +22,7 @@ function App() {
       </main>
       <Footer />
     </>
-  );
+  )
 }
 
-export default App;
+export default App

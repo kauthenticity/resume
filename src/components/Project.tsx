@@ -69,8 +69,10 @@ export const Project = ({
               <Td className="label">상세</Td>
               <Td>
                 <ul style={{ margin: 0 }}>
-                  {description.map((desc) => (
-                    <li style={{ color: "var(--gray900)" }}>{desc}</li>
+                  {description.map((desc, idx) => (
+                    <li style={{ color: "var(--gray900)" }} key={idx + desc}>
+                      {desc}
+                    </li>
                   ))}
                 </ul>
               </Td>
