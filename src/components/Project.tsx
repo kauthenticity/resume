@@ -1,4 +1,4 @@
-import React from "react"
+import { CSSProperties } from "react"
 import styled from "styled-components"
 import { SiNotion } from "react-icons/si"
 import { BsGithub } from "react-icons/bs"
@@ -15,8 +15,9 @@ type ProjectProps = {
   introduce: string
   role: string
   techStack: string
+  outcome: string[]
   contribution?: string
-  style?: React.CSSProperties
+  style?: CSSProperties
   notion?: string
   github?: string
   url?: string
@@ -31,6 +32,7 @@ export const Project = ({
   introduce,
   role,
   techStack,
+  outcome,
   contribution,
   description,
   style,
@@ -78,6 +80,22 @@ export const Project = ({
               </Td>
             </tr>
           )}
+
+          <tr>
+            <Td className="label">성과</Td>
+            <Td>
+              <ul style={{ margin: 0 }}>
+                {outcome.map((outcomeItem, idx) => (
+                  <li
+                    style={{ color: "var(--gray900)" }}
+                    key={idx + outcomeItem}
+                  >
+                    {outcomeItem}
+                  </li>
+                ))}
+              </ul>
+            </Td>
+          </tr>
         </tbody>
       </Table>
       <LinkContainer>
