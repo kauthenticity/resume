@@ -9,7 +9,7 @@ export const WorkExperience = () => {
         duration="2021.12 - 2022.06"
         introduce="Microsoft사의 Dynamics365를 바탕으로 한 CRM 개발"
         role="프론트엔드 인턴"
-        techStack="Vanila.JS, HTML5, Vue, Angular"
+        techStack="Javascript, HTML5, CSS, JQuery, Vue, Angular"
         description={[
           "SM C&C, 율촌 등 CRM 구축 및 개발",
           "브라우저 렌더링 과정 이해를 바탕으로 커스텀 CRM 개발",
