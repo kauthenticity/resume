@@ -1,10 +1,11 @@
-import React from "react"
-import styled from "styled-components"
+import StrengthIcon from "../static/images/Strength.png"
 
 export const Strength = () => {
   return (
     <section className="container">
-      <h1>✨ Strength</h1>
+      <h1>
+        <img className="icon" src={StrengthIcon} /> Strength
+      </h1>
       <section className="subContainer">
         <h2>흐름을 읽는 능력</h2>
         <ul>

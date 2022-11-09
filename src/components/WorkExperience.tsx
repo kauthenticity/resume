@@ -1,9 +1,12 @@
 import { Project } from "./Project"
+import WorkExperienceIcon from "../static/images/WorkExperience.png"
 
 export const WorkExperience = () => {
   return (
     <section className="container">
-      <h1>💼 Work Experience</h1>
+      <h1>
+        <img className="icon" src={WorkExperienceIcon} /> Work Experience
+      </h1>
       <Project
         name="(주) 퀄리소프트"
         duration="2021.12 - 2022.06"

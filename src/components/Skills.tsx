@@ -1,7 +1,12 @@
+import SkillIcon from "../static/images/Skills.png"
+
 export const Skills = () => {
   return (
     <section className="container">
-      <h1>🛠 Skills</h1>
+      <h1>
+        <img className="icon" src={SkillIcon} />
+        Skills
+      </h1>
       <section className="subContainer">
         <h2>React</h2>
         <ul>

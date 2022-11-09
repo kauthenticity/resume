@@ -1,11 +1,13 @@
-import React from "react"
 import { Duration } from "./Duration"
 import { Table, Td } from "../styles"
+import EtcIcon from "../static/images/Etc.png"
 
 export const Etc = () => {
   return (
     <section className="container">
-      <h1>🗂 Etc.</h1>
+      <h1>
+        <img className="icon" src={EtcIcon} /> Etc.
+      </h1>
       <section className="subContainer">
         <h2>서강대학교 컴퓨터공학과 부학생회장</h2>
         <Duration duration="2018.11 - 2020.02" />
