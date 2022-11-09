@@ -122,14 +122,14 @@ export const Project = ({
         )}
         {appStore && (
           <LinkButton>
-            <a href="" target="_blank">
+            <a href={appStore} target="_blank">
               <RiAppStoreFill size={16} color={colors.gray700} />
             </a>
           </LinkButton>
         )}
         {playStore && (
           <LinkButton>
-            <a href="" target="_blank">
+            <a href={playStore} target="_blank">
               <IoLogoGooglePlaystore size={16} color={colors.gray700} />
             </a>
           </LinkButton>
