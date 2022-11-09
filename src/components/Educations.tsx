@@ -22,7 +22,7 @@ export const Educations = () => {
                 4.01/4.5
                 <span style={{ color: "var(--gray500)" }}>
                   {" "}
-                  (전공 4.16/4.5)
+                  (전공 4.18/4.5)
                 </span>
               </Td>
             </tr>
