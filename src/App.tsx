@@ -5,6 +5,7 @@ import {
   Strength,
   Skills,
   Educations,
+  Language,
   Etc,
   Footer,
 } from "./components"
@@ -18,6 +19,7 @@ function App() {
         <WorkExperience />
         <Strength />
         <Educations />
+        <Language />
         <Etc />
       </main>
       <Footer />

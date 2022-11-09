@@ -5,7 +5,7 @@ import { Table, Td } from "../styles"
 export const Etc = () => {
   return (
     <section className="container">
-      <h1>Etc.</h1>
+      <h1>🗂 Etc.</h1>
       <section className="subContainer">
         <h2>서강대학교 컴퓨터공학과 부학생회장</h2>
         <Duration duration="2018.11 - 2020.02" />
@@ -72,10 +72,6 @@ export const Etc = () => {
             </tr>
           </tbody>
         </Table>
-      </section>
-      <section className="subContainer">
-        <h2>TOEIC 935</h2>
-        <Duration duration="2021.08.29" />
       </section>
     </section>
   )
