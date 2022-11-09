@@ -17,7 +17,7 @@ const Container = styled.header`
   left: 0;
   right: 0px;
   box-sizing: inherit;
-  max-width: 650px;
+  max-width: var(--max-width);
   margin: auto;
   background-color: rgba(255, 255, 255, 0.8);
 `
