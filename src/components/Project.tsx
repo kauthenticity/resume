@@ -99,13 +99,6 @@ export const Project = ({
         </tbody>
       </Table>
       <LinkContainer>
-        {url && (
-          <LinkButton>
-            <a href={url} target="_blank">
-              <BiLink size={16} color={colors.gray700} />
-            </a>
-          </LinkButton>
-        )}
         {notion && (
           <LinkButton>
             <a href={notion} target="_blank">
@@ -117,6 +110,13 @@ export const Project = ({
           <LinkButton>
             <a href={github} target="_blank">
               <BsGithub size={16} color={colors.gray700} />
+            </a>
+          </LinkButton>
+        )}
+        {url && (
+          <LinkButton>
+            <a href={url} target="_blank">
+              <BiLink size={16} color={colors.gray700} />
             </a>
           </LinkButton>
         )}
