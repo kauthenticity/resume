@@ -55,6 +55,16 @@ export const WorkExperience = () => {
         github="https://github.com/kauthenticity/bob-ta"
         outcome={["서비스 런칭", "서비스 사용자의 프로젝트 합류 요청"]}
       />
+      <Project
+        name="네이버파이낸셜"
+        duration="2023.01 - 2023.02"
+        introduce="팀내 협업 도구 개발"
+        role="기획, UI/UX 디자인, 프론트엔드 개발 및 배포"
+        techStack="React, Typescript"
+        contribution="100%"
+        style={{ marginTop: "1rem" }}
+        outcome={["프로젝트 완성 및 배포", "협업에서의 git 사용", "보기 좋은 코드, PR, 커밋 작성법"]}
+      />
     </section>
   )
 }
