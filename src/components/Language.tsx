@@ -10,6 +10,10 @@ export const Language = () => {
         <h2>TOEIC 935</h2>
         <Duration duration="2021.08.29" />
       </section>
+      <section className="subContainer">
+        <h2>OPIC IH</h2>
+        <Duration duration="2023.03.11" />
+      </section>
     </section>
   )
 }
