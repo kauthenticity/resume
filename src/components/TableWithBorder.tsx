@@ -16,7 +16,7 @@ export const TableWithBorder = ({ tableElements }: TableWithBorderProps) => {
               {label}
             </Td>
             <Td>
-              {isLink ? <a href={description}>{description}</a> : description}
+              {isLink ? <a href={description} target="_blank" rel="noreferrer">{description}</a> : description}
             </Td>
           </Tr>
         ))}

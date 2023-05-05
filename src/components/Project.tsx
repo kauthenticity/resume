@@ -101,35 +101,35 @@ export const Project = ({
       <LinkContainer>
         {notion && (
           <LinkButton>
-            <a href={notion} target="_blank">
+            <a href={notion} target="_blank" rel="noreferrer">
               <SiNotion size={16} color={colors.gray700} />
             </a>
           </LinkButton>
         )}
         {github && (
           <LinkButton>
-            <a href={github} target="_blank">
+            <a href={github} target="_blank" rel="noreferrer">
               <BsGithub size={16} color={colors.gray700} />
             </a>
           </LinkButton>
         )}
         {url && (
           <LinkButton>
-            <a href={url} target="_blank">
+            <a href={url} target="_blank" rel="noreferrer">
               <BiLink size={16} color={colors.gray700} />
             </a>
           </LinkButton>
         )}
         {appStore && (
           <LinkButton>
-            <a href={appStore} target="_blank">
+            <a href={appStore} target="_blank" rel="noreferrer">
               <RiAppStoreFill size={16} color={colors.gray700} />
             </a>
           </LinkButton>
         )}
         {playStore && (
           <LinkButton>
-            <a href={playStore} target="_blank">
+            <a href={playStore} target="_blank" rel="noreferrer">
               <IoLogoGooglePlaystore size={16} color={colors.gray700} />
             </a>
           </LinkButton>
