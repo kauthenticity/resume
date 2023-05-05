@@ -4,7 +4,7 @@ export const Skills = () => {
   return (
     <section className="container">
       <h1>
-        <img className="icon" src={SkillIcon} />
+        <img className="icon" src={SkillIcon} alt="skill"/>
         Skills
       </h1>
       <section className="subContainer">
