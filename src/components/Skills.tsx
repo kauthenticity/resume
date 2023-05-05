@@ -11,15 +11,13 @@ export const Skills = () => {
         <h2>React</h2>
         <ul>
           <li>
-            React Hook 및 dependency를 이해해서 능숙하게 사용할 수 있습니다.
+            React의 렌더링 과정을 이해하고 상태 관리를 할 수 있습니다.
           </li>
           <li>
-            재사용 가능한 컴포넌트를 통한 코드의 간결성 및 유지 보수의 효율성을
-            지향합니다.
+            재사용 가능한 컴포넌트를 통해 유지보수가 쉽도록 코드를 작성합니다.
           </li>
           <li>
-            React Query, Redux Toolkit과 같은 상태 관리 라이브러리 사용에
-            익숙합니다.
+            불변성 유지를 통한 부수효과 억제 및 가독성 향상을 추구합니다.
           </li>
         </ul>
       </section>
@@ -36,11 +34,10 @@ export const Skills = () => {
       <section className="subContainer">
         <h2>Javascript, Typescript</h2>
         <ul>
-          <li>ES6 문법을 사용해서 원하는 코드를 편하게 작성할 수 있습니다.</li>
-          <li>
-            React에서 객체에 타입을 지정해서 코드를 빠르게 작성하고 에러를
-            방지할 수 있습니다.
-          </li>
+          <li>ES6 문법을 사용합니다.</li>
+          <li>실행 컨텍스트, 프로토타입, 클로저와 같은 javascript의 핵심을 이해하고 있습니다.</li>
+          <li>타입 추론을 통해 빠르게 코드를 작성하고 런타임 오류를 방지할 수 있습니다.</li>
+          <li>확장성을 고려하여 타입을 설계할 수 있습니다.</li>
         </ul>
       </section>
       <section className="subContainer">
