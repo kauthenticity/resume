@@ -10,7 +10,7 @@ export const Educations = () => {
       </h1>
       <section className="subContainer">
         <h2>서강대학교 컴퓨터공학과</h2>
-        <Duration>2018.02 - 2023.02 (예정)</Duration>
+        <Duration>2018.02 - 2023.02</Duration>
         <Table>
           <thead></thead>
           <tbody>
@@ -19,11 +19,7 @@ export const Educations = () => {
                 CGPA
               </Td>
               <Td>
-                4.01/4.5
-                <span style={{ color: "var(--gray500)" }}>
-                  {" "}
-                  (전공 4.18/4.5)
-                </span>
+                4.02/4.5
               </Td>
             </tr>
           </tbody>
