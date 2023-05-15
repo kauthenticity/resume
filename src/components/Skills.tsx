@@ -34,7 +34,7 @@ export const Skills = () => {
       <section className="subContainer">
         <h2>Javascript, Typescript</h2>
         <ul>
-          <li>ES6 문법을 사용합니다.</li>
+          <li>ES6+ 문법을 사용합니다.</li>
           <li>실행 컨텍스트, 프로토타입, 클로저와 같은 javascript의 핵심을 이해하고 있습니다.</li>
           <li>타입 추론을 통해 빠르게 코드를 작성하고 런타임 오류를 방지할 수 있습니다.</li>
           <li>확장성을 고려하여 타입을 설계할 수 있습니다.</li>
