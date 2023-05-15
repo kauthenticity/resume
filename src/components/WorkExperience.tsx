@@ -53,7 +53,7 @@ export const WorkExperience = () => {
         notion="https://kauthenticity.notion.site/906deec27e424c1bb4e6d51b212602e0"
         url="http://bob-ta.com/index"
         github="https://github.com/kauthenticity/bob-ta"
-        outcome={["서비스 런칭", "서비스 사용자의 프로젝트 합류 요청"]}
+        outcome={["200명 사용자 확보", "서비스 사용자의 프로젝트 합류 요청"]}
       />
       <Project
         name="네이버파이낸셜"
