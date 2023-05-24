@@ -59,7 +59,7 @@ export const WorkExperience = () => {
         name="네이버파이낸셜"
         duration="2023.01 - 2023.02"
         introduce="팀내 협업 도구 개발"
-        role="기획, UI/UX 디자인, 프론트엔드 개발 및 배포"
+        role="프론트엔드 인턴"
         techStack="React, Typescript"
         contribution="100%"
         style={{ marginTop: "1rem" }}
