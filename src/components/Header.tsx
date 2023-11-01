@@ -1,15 +1,19 @@
-import { useCallback } from "react"
-import styled from "styled-components"
+import { useCallback } from "react";
+import styled from "styled-components";
 export const Header = () => {
   const onClickTitle = useCallback(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <Container>
       <Title onClick={onClickTitle}>강진실의 이력서</Title>
     </Container>
-  )
-}
+  );
+};
 
 const Container = styled.header`
   position: fixed;
@@ -20,10 +24,10 @@ const Container = styled.header`
   max-width: var(--max-width);
   margin: auto;
   background-color: rgba(255, 255, 255, 0.8);
-`
+`;
 const Title = styled.div`
   padding: 1.5rem 0;
   padding-left: 1.5rem;
   font-weight: 400;
   cursor: pointer;
-`
+`;
