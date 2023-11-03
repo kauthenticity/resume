@@ -1,50 +1,59 @@
-import React from "react"
-import styled from "styled-components"
+import React from "react";
+import styled from "styled-components";
 
 type TableWithBorderProps = {
-  tableElements: { label: string; description: string; isLink?: boolean }[]
-}
+  tableElements: { label: string; description: string; url: string }[];
+};
 
 export const TableWithBorder = ({ tableElements }: TableWithBorderProps) => {
   return (
     <Table>
-      <thead></thead>
+      <thead />
       <Tbody>
-        {tableElements.map(({ label, description, isLink }, idx) => (
-          <Tr key={idx + label}>
-            <Td className="label" style={{ width: "8rem" }}>
-              {label}
-            </Td>
-            <Td>
-              {isLink ? <a href={description} target="_blank" rel="noreferrer">{description}</a> : description}
+        {tableElements.map(({ label, description, url }) => (
+          <Tr key={label}>
+            <Td className="label">{label}</Td>
+            <Td className="desc">
+              <a href={url} target="_blank" rel="noreferrer">
+                {description}
+              </a>
             </Td>
           </Tr>
         ))}
       </Tbody>
     </Table>
-  )
-}
+  );
+};
 const Tr = styled.tr`
-  border-bottom: 1px solid hsla(0, 0%, 0%, 0.12);
-`
+  //border-bottom: 1px solid hsla(0, 0%, 0%, 0.12);
+`;
 
 const Td = styled.td`
-  padding: 0.8125rem 0;
+  padding: 0.8125rem 0 0.8125rem 0.8125rem;
 
   &.label {
-    font-weight: 700;
+    font-weight: 600;
+    width: 8rem;
   }
-`
+
+  &.desc {
+    color: var(--gray600);
+  }
+
+  a {
+    color: inherit;
+  }
+`;
 const Table = styled.table`
   width: 100%;
   border-collapse: collapse;
   margin-top: 1.66rem;
-`
+`;
 
 const Tbody = styled.tbody`
   tr {
     &:first-child {
-      border-top: 1px solid hsla(0, 0%, 0%, 0.12);
+      //border-top: 1px solid hsla(0, 0%, 0%, 0.12);
     }
   }
-`
+`;
