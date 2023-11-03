@@ -75,9 +75,13 @@ export const Project = ({
             <tr>
               <Td className="label">상세</Td>
               <Td>
-                <ul style={{ margin: 0 }}>
+                <ul className="project__text" style={{ margin: 0 }}>
                   {description.map((desc, idx) => (
-                    <li style={{ color: "var(--gray900)" }} key={idx + desc}>
+                    <li
+                      className="project__text"
+                      style={{ color: "var(--gray900)" }}
+                      key={idx + desc}
+                    >
                       {desc}
                     </li>
                   ))}
@@ -90,9 +94,10 @@ export const Project = ({
             <tr>
               <Td className="label">성과</Td>
               <Td>
-                <ul style={{ margin: 0 }}>
+                <ul className="project__text" style={{ margin: 0 }}>
                   {outcome.map((outcomeItem, idx) => (
                     <li
+                      className="project__text"
                       style={{ color: "var(--gray900)" }}
                       key={idx + outcomeItem}
                     >

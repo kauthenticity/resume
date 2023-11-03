@@ -8,6 +8,7 @@ import {
   Language,
   Etc,
   Footer,
+  Projects,
 } from "./components";
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Introduce />
         {/* <Skills /> */}
         <WorkExperience />
+        <Projects />
         <Strength />
         <Educations />
         <Language />
