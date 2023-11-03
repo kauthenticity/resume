@@ -8,14 +8,14 @@ import {
   Language,
   Etc,
   Footer,
-} from "./components"
+} from "./components";
 function App() {
   return (
     <>
       <Header />
       <main>
         <Introduce />
-        <Skills />
+        {/* <Skills /> */}
         <WorkExperience />
         <Strength />
         <Educations />
@@ -24,7 +24,7 @@ function App() {
       </main>
       <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

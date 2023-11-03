@@ -1,23 +1,23 @@
-import { Project } from "./Project"
-import WorkExperienceIcon from "../static/images/WorkExperience.png"
+import { Project } from "./Project";
+import WorkExperienceIcon from "../static/images/WorkExperience.png";
 
 export const WorkExperience = () => {
   return (
     <section className="container">
       <h1>
-        <img className="icon" src={WorkExperienceIcon} /> Work Experience
+        <img className="icon" src={WorkExperienceIcon} alt="" /> Work
+        Experiences
       </h1>
       <Project
         name="(주) 퀄리소프트"
         duration="2021.12 - 2022.06"
-        introduce="Microsoft사의 Dynamics365를 바탕으로 한 CRM 개발"
+        introduce="Dynamics365 기반 커스텀 CRM 개발"
         role="프론트엔드 인턴"
-        techStack="Javascript, HTML5, CSS, JQuery, Vue, Angular"
+        techStacks={["Javascript", "HTML5", "CSS", "JQuery", "Vue"]}
         description={[
-          "SM C&C, 율촌 등 CRM 구축 및 개발",
-          "브라우저 렌더링 과정 이해를 바탕으로 커스텀 CRM 개발",
-          "CRM 데모 페이지 생성 간소화",
-          "로컬 서버에 저장된 소스 코드를 azure cloud 서버로 이전",
+          "고객사의 요구에 맞는 CRM 구축 및 개발",
+          "데모 CRM 구축 과정 간소화",
+          "소스코드 서버 migration",
         ]}
         outcome={[
           "Git을 통한 협업 시작에 따른 형상 관리 및 유지 보수 활성화, 보다 안정적인 서버 확보",
@@ -25,7 +25,7 @@ export const WorkExperience = () => {
           "소스 코드 저장소 변경에 따른 작업 시간 단축 및 생산성 향상",
         ]}
       />
-      <Project
+      {/* <Project
         name="한입"
         duration="2022.05 - 2022.07"
         introduce="팬들을 위한 굿즈 나눔 플랫폼"
@@ -55,16 +55,24 @@ export const WorkExperience = () => {
         github="https://github.com/kauthenticity/bob-ta"
         outcome={["200명 사용자 확보", "서비스 사용자의 프로젝트 합류 요청"]}
       />
+      */}
       <Project
         name="네이버파이낸셜"
-        duration="2023.01 - 2023.02"
+        duration="2023.01 - 2023.03"
         introduce="팀내 협업 도구 개발"
         role="프론트엔드 인턴"
-        techStack="React, Typescript"
-        contribution="100%"
+        techStacks={["React", "Typescript", "Styled-Components"]}
         style={{ marginTop: "1rem" }}
-        outcome={["프로젝트 완성 및 배포", "협업에서의 git 사용", "보기 좋은 코드, PR, 커밋 작성법"]}
+        description={[
+          "기획, 디자인, 개발 총괄 1인 프로젝트",
+          "Github API를 사용한 협업 도구 개발",
+          "Github Projects를 통한 개발 일정 관리",
+        ]}
+        outcome={[
+          "함수형 프로그래밍을 통한 산발적 데이터 가공",
+          "협업에서 가독성을 위한 클린 코드 작성법",
+        ]}
       />
     </section>
-  )
-}
+  );
+};

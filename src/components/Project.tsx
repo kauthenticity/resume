@@ -1,37 +1,39 @@
-import { CSSProperties } from "react"
-import styled from "styled-components"
-import { SiNotion } from "react-icons/si"
-import { BsGithub } from "react-icons/bs"
-import { RiAppStoreFill } from "react-icons/ri"
-import { IoLogoGooglePlaystore } from "react-icons/io5"
-import { BiLink } from "react-icons/bi"
-import { Duration } from "./Duration"
-import * as colors from "../styles"
-import { Table, Td } from "../styles"
+import { CSSProperties } from "react";
+import styled from "styled-components";
+import { SiNotion } from "react-icons/si";
+import { BsGithub } from "react-icons/bs";
+import { RiAppStoreFill } from "react-icons/ri";
+import { IoLogoGooglePlaystore } from "react-icons/io5";
+import { BiLink } from "react-icons/bi";
+import { Duration } from "./Duration";
+import * as colors from "../styles";
+import { Table, Td } from "../styles";
+import Chip from "../lib/Chip";
+import FlexBox from "../lib/FlexBox";
 
 type ProjectProps = {
-  name: string
-  duration: string
-  introduce: string
-  role: string
-  techStack: string
-  outcome: string[]
-  contribution?: string
-  style?: CSSProperties
-  notion?: string
-  github?: string
-  url?: string
-  appStore?: string
-  playStore?: string
-  description?: string[]
-}
+  name: string;
+  duration: string;
+  introduce: string;
+  role: string;
+  techStacks: string[];
+  outcome?: string[];
+  contribution?: string;
+  style?: CSSProperties;
+  notion?: string;
+  github?: string;
+  url?: string;
+  appStore?: string;
+  playStore?: string;
+  description?: string[];
+};
 
 export const Project = ({
   name,
   duration,
   introduce,
   role,
-  techStack,
+  techStacks,
   outcome,
   contribution,
   description,
@@ -46,6 +48,12 @@ export const Project = ({
     <section style={style} className="subContainer">
       <h2>{name}</h2>
       <Duration duration={duration}></Duration>
+      <FlexBox alignItems="center" gap="12px" mt="12px" flexWrap="wrap">
+        {techStacks.map((techStack) => (
+          <Chip text={techStack} />
+        ))}
+      </FlexBox>
+
       <Table>
         <tbody>
           <tr>
@@ -56,10 +64,7 @@ export const Project = ({
             <Td className="label">역할</Td>
             <Td>{role}</Td>
           </tr>
-          <tr>
-            <Td className="label">기술 스택</Td>
-            <Td>{techStack}</Td>
-          </tr>
+
           {contribution && (
             <tr>
               <Td className="label">역할 기여도</Td>
@@ -81,21 +86,23 @@ export const Project = ({
             </tr>
           )}
 
-          <tr>
-            <Td className="label">성과</Td>
-            <Td>
-              <ul style={{ margin: 0 }}>
-                {outcome.map((outcomeItem, idx) => (
-                  <li
-                    style={{ color: "var(--gray900)" }}
-                    key={idx + outcomeItem}
-                  >
-                    {outcomeItem}
-                  </li>
-                ))}
-              </ul>
-            </Td>
-          </tr>
+          {outcome && (
+            <tr>
+              <Td className="label">성과</Td>
+              <Td>
+                <ul style={{ margin: 0 }}>
+                  {outcome.map((outcomeItem, idx) => (
+                    <li
+                      style={{ color: "var(--gray900)" }}
+                      key={idx + outcomeItem}
+                    >
+                      {outcomeItem}
+                    </li>
+                  ))}
+                </ul>
+              </Td>
+            </tr>
+          )}
         </tbody>
       </Table>
       <LinkContainer>
@@ -136,8 +143,8 @@ export const Project = ({
         )}
       </LinkContainer>
     </section>
-  )
-}
+  );
+};
 const LinkButton = styled.button`
   padding: 0.3rem 1.2rem;
   border-radius: 0.4rem;
@@ -147,12 +154,12 @@ const LinkButton = styled.button`
 
   margin-right: 0.5rem;
   cursor: pointer;
-`
+`;
 const LinkContainer = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
-`
+`;
 
 // const Table = styled.table`
 //   margin: 0.75rem 0;
