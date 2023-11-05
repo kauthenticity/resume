@@ -4,7 +4,7 @@ function Skills() {
   return (
     <section className="container">
       <h1>
-        <img className="icon" src="images/Skills.png" alt="skill" />
+        <img className="icon" src="images/Strength.png" alt="skill" />
         Skills
       </h1>
       {SKILLS_DATA.map(({ name, descriptions }) => (

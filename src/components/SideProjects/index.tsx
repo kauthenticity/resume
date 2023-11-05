@@ -6,7 +6,7 @@ function SideProjects() {
   return (
     <section className="container">
       <h1>
-        <img className="icon" src="images/workExperience.png" alt="" /> Side
+        <img className="icon" src="images/SideProjects.png" alt="" /> Side
         Projects
       </h1>
 
