@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import FlexBox from "../lib/FlexBox";
 import ColoredChip from "../lib/ColoredChip";
-import type { TSideProject } from "../types/SideProjectCard";
+import type { TSideProject } from "../types/SideProjectCard.type";
 
 type TSideProjectCardProps = TSideProject &
   React.AnchorHTMLAttributes<HTMLAnchorElement>;
