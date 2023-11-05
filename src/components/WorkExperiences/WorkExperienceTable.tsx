@@ -37,10 +37,10 @@ export const WorkExperienceTable = ({
           <tr>
             <Td className="label">상세</Td>
             <Td>
-              <ul className="project__text" style={{ margin: 0 }}>
+              <ul className="list__decoration" style={{ margin: 0 }}>
                 {description.map((desc, idx) => (
                   <li
-                    className="project__text"
+                    className="list__decoration"
                     style={{ color: "var(--gray900)" }}
                     key={idx + desc}
                   >
@@ -54,10 +54,10 @@ export const WorkExperienceTable = ({
           <tr>
             <Td className="label">성과</Td>
             <Td>
-              <ul className="project__text" style={{ margin: 0 }}>
+              <ul className="list__decoration" style={{ margin: 0 }}>
                 {outcome.map((outcomeItem, idx) => (
                   <li
-                    className="project__text"
+                    className="list__decoration"
                     style={{ color: "var(--gray900)" }}
                     key={idx + outcomeItem}
                   >
