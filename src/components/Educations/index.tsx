@@ -5,7 +5,7 @@ function Educations() {
   return (
     <section className="container">
       <h1>
-        <img className="icon" src="images/Education.png" alt="" /> Educations
+        <img className="icon" src="images/Educations.png" alt="" /> Educations
       </h1>
       <section className="subContainer">
         <h2>서강대학교 컴퓨터공학과</h2>

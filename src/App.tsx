@@ -10,7 +10,6 @@ function App() {
         <Components.Skills />
         <Components.WorkExperience />
         <Components.SideProjects />
-        <Components.Strengths />
         <Components.Educations />
         <Components.Languages />
         <Components.Etc />
