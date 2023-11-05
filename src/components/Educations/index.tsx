@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Table, Td } from "../../styles";
+import { Table, Td } from "@styles";
 
 function Educations() {
   return (

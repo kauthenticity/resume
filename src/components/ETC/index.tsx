@@ -1,5 +1,5 @@
 import { Duration } from "@lib/Duration";
-import { Table, Td } from "../../styles";
+import { Table, Td } from "@styles";
 function Etc() {
   return (
     <section className="container">

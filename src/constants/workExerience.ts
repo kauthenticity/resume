@@ -1,4 +1,4 @@
-import type { TWorkExperience } from "../types/workExperience.type";
+import type { TWorkExperience } from "types/workExperience.type";
 import { TECH_STACKS } from "./techStacks";
 
 export const WORK_EXPERIENCES_DATA: TWorkExperience[] = [

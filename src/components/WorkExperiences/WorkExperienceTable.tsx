@@ -1,8 +1,8 @@
 import { Duration } from "@lib/Duration";
-import { Table, Td } from "../../styles";
+import { Table, Td } from "@styles";
 import Chip from "@lib/Chip";
 import FlexBox from "@lib/FlexBox";
-import type { TWorkExperience } from "../../types/workExperience.type";
+import type { TWorkExperience } from "types/workExperience.type";
 
 export const WorkExperienceTable = ({
   name,

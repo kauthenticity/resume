@@ -1,4 +1,4 @@
-import type { TSideProject } from "../types/SideProjectCard.type";
+import type { TSideProject } from "types/SideProjectCard.type";
 import { TECH_STACKS } from "./techStacks";
 
 export const SIDE_PROJECTS_DATA: TSideProject[] = [
