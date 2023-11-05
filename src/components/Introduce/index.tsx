@@ -23,7 +23,7 @@ function Introduce() {
               <TbBrandGithub
                 className="contact__icon"
                 size="20px"
-                color="var(--gray800)"
+                color="var(--gray50)"
               />
             }
           />
@@ -36,7 +36,7 @@ function Introduce() {
               <TbMail
                 className="contact__icon"
                 size="20px"
-                color="var(--gray800)"
+                color="var(--gray50)"
                 strokeWidth="1.75"
               />
             }

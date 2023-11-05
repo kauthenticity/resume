@@ -20,16 +20,16 @@ const ExternalLink = styled.a`
   justify-content: center;
   align-items: center;
 
-  width: 36px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
 
-  background: var(--gray200);
+  background: var(--gray800);
 
   cursor: pointer;
 
   transition: background 0.2s ease;
   &:hover {
-    background: var(--gray300);
+    background: var(--gray900);
   }
 `;
