@@ -11,7 +11,7 @@ function Languages() {
         <Duration duration="2021.08.29" />
       </section>
       <section className="subContainer">
-        <h2>OPIC IH</h2>
+        <h2>OPIc IH</h2>
         <Duration duration="2023.03.11" />
       </section>
     </section>
