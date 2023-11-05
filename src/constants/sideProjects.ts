@@ -6,7 +6,7 @@ export const SIDE_PROJECTS_DATA: TSideProject[] = [
     imagePath: "/images/healthier.png",
     title: "헬시어",
     description: "증상 감별 및 건강 관리 서비스",
-    url: "",
+    url: "https://kauthenticity.notion.site/310b0f5d7d924444b4d4d6462a417496?pvs=4",
     techStacks: [
       TECH_STACKS.REACT,
       TECH_STACKS.TYPESCRIPT,
