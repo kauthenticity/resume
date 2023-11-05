@@ -1,10 +1,8 @@
-import StrengthIcon from "../static/images/Strength.png"
-
-export const Strength = () => {
+function Strength() {
   return (
     <section className="container">
       <h1>
-        <img className="icon" src={StrengthIcon} /> Strength
+        <img className="icon" src="images/Strength.png" alt="" /> Strength
       </h1>
       <section className="subContainer">
         <h2>흐름을 읽는 능력</h2>
@@ -50,5 +48,7 @@ export const Strength = () => {
         </ul>
       </section>
     </section>
-  )
+  );
 }
+
+export default Strength;

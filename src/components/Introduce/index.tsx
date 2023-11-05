@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import { TbBrandGithub, TbMail } from "react-icons/tb";
-import ExternalLinkButton from "../lib/ExternalLinkButton";
+import ExternalLinkButton from "@lib/ExternalLinkButton";
 
-export const Introduce = () => {
+function Introduce() {
   return (
     <section className="container">
       <h1>
@@ -45,7 +45,9 @@ export const Introduce = () => {
       </ContactButtonList>
     </section>
   );
-};
+}
+
+export default Introduce;
 
 const Description = styled.div`
   color: var(--gray700);

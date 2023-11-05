@@ -1,30 +1,20 @@
-import {
-  Header,
-  Introduce,
-  WorkExperience,
-  Strength,
-  Skills,
-  Educations,
-  Language,
-  Etc,
-  Footer,
-  Projects,
-} from "./components";
+//import Components from "./components";
+import Components from "@components";
+
 function App() {
   return (
     <>
-      <Header />
+      <Components.Header />
       <main>
-        <Introduce />
-        {/* <Skills /> */}
-        <WorkExperience />
-        <Projects />
-        <Strength />
-        <Educations />
-        <Language />
-        <Etc />
+        <Components.Introduce />
+        <Components.Skills />
+        <Components.WorkExperience />
+        <Components.SideProjects />
+        <Components.Strengths />
+        <Components.Educations />
+        <Components.Languages />
+        <Components.Etc />
       </main>
-      <Footer />
     </>
   );
 }

@@ -1,13 +1,13 @@
 import styled from "styled-components";
-import WorkExperienceIcon from "../static/images/WorkExperience.png";
 import SideProjectCard from "./SideProjectCard";
-import { SIDE_PROJECTS_DATA } from "../constants/sideProjects";
+import { SIDE_PROJECTS_DATA } from "@constants/sideProjects";
 
-export const Projects = () => {
+function SideProjects() {
   return (
     <section className="container">
       <h1>
-        <img className="icon" src={WorkExperienceIcon} alt="" /> Side Projects
+        <img className="icon" src="images/workExperience.png" alt="" /> Side
+        Projects
       </h1>
 
       <List>
@@ -19,7 +19,9 @@ export const Projects = () => {
       </List>
     </section>
   );
-};
+}
+
+export default SideProjects;
 
 const List = styled.ul`
   width: 100%;

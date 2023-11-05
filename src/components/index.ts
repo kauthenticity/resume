@@ -1,10 +1,23 @@
-export * from "./Header";
-export * from "./Introduce";
-export * from "./WorkExperience";
-export * from "./Strength";
-export * from "./Skills";
-export * from "./Educations";
-export * from "./Etc";
-export * from "./Footer";
-export * from "./Language";
-export * from "./Projects";
+import WorkExperience from "./WorkExperiences";
+import Introduce from "./Introduce";
+import Header from "./Header";
+import Educations from "./Educations";
+import SideProjects from "./SideProjects";
+import Languages from "./Languages";
+import Etc from "./ETC";
+import Skills from "./Skills";
+import Strengths from "./Strengths";
+
+const Components = {
+  WorkExperience,
+  Introduce,
+  Header,
+  Educations,
+  SideProjects,
+  Languages,
+  Etc,
+  Skills,
+  Strengths,
+};
+
+export default Components;

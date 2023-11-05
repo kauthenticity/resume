@@ -1,6 +1,7 @@
 import { useCallback } from "react";
 import styled from "styled-components";
-export const Header = () => {
+
+function Header() {
   const onClickTitle = useCallback(() => {
     window.scrollTo({
       top: 0,
@@ -13,7 +14,9 @@ export const Header = () => {
       <Title onClick={onClickTitle}>강진실의 이력서</Title>
     </Container>
   );
-};
+}
+
+export default Header;
 
 const Container = styled.header`
   position: fixed;

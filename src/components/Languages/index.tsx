@@ -1,10 +1,10 @@
-import { Duration } from "./Duration"
-import LanguageIcon from "../static/images/Languages.png"
-export const Language = () => {
+import { Duration } from "@lib/Duration";
+
+function Languages() {
   return (
     <section className="container">
       <h1>
-        <img className="icon" src={LanguageIcon} /> Languages
+        <img className="icon" src="images/Languages.png" alt="" /> Languages
       </h1>
       <section className="subContainer">
         <h2>TOEIC 935</h2>
@@ -15,5 +15,7 @@ export const Language = () => {
         <Duration duration="2023.03.11" />
       </section>
     </section>
-  )
+  );
 }
+
+export default Languages;

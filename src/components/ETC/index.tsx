@@ -1,12 +1,10 @@
-import { Duration } from "./Duration"
-import { Table, Td } from "../styles"
-import EtcIcon from "../static/images/Etc.png"
-
-export const Etc = () => {
+import { Duration } from "@lib/Duration";
+import { Table, Td } from "../../styles";
+function Etc() {
   return (
     <section className="container">
       <h1>
-        <img className="icon" src={EtcIcon} /> Etc.
+        <img className="icon" src="images/Etc.png" alt="" /> Etc.
       </h1>
       <section className="subContainer">
         <h2>서강대학교 컴퓨터공학과 부학생회장</h2>
@@ -76,5 +74,7 @@ export const Etc = () => {
         </Table>
       </section>
     </section>
-  )
+  );
 }
+
+export default Etc;
