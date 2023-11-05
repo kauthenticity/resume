@@ -27,7 +27,9 @@ const List = styled.ul`
   display: inline-flex;
 
   gap: 12px;
-
-  overflow-y: scroll;
+  overflow-x: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `;
 const ListItem = styled.li``;
