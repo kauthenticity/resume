@@ -1,4 +1,5 @@
 import type { TWorkExperience } from "../types/workExperience.type";
+import { TECH_STACKS } from "./techStacks";
 
 export const WORK_EXPERIENCES_DATA: TWorkExperience[] = [
   {
@@ -6,7 +7,13 @@ export const WORK_EXPERIENCES_DATA: TWorkExperience[] = [
     duration: "2021.12 - 2022.06",
     introduce: "Dynamics365 기반 커스텀 CRM 개발",
     role: "프론트엔드 인턴",
-    techStacks: ["Javascript", "HTML5", "CSS", "JQuery", "Vue"],
+    techStacks: [
+      TECH_STACKS.JAVASCRIPT,
+      TECH_STACKS.HTML5,
+      TECH_STACKS.CSS,
+      TECH_STACKS.JQUERY,
+      TECH_STACKS.VUE,
+    ],
     description: [
       "고객사의 요구에 맞는 CRM 구축 및 개발",
       "데모 CRM 구축 과정 간소화",
@@ -23,7 +30,11 @@ export const WORK_EXPERIENCES_DATA: TWorkExperience[] = [
     duration: "2023.01 - 2023.03",
     introduce: "팀내 협업 도구 개발",
     role: "프론트엔드 인턴",
-    techStacks: ["React", "Typescript", "Styled-Components"],
+    techStacks: [
+      TECH_STACKS.REACT,
+      TECH_STACKS.TYPESCRIPT,
+      TECH_STACKS.STYLED_COMPONENT,
+    ],
     description: [
       "기획, 디자인, 개발 총괄 1인 프로젝트",
       "Github API를 사용한 협업 도구 개발",

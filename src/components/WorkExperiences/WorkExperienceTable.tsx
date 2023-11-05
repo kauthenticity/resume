@@ -1,7 +1,7 @@
-import { Duration } from "../../lib/Duration";
+import { Duration } from "@lib/Duration";
 import { Table, Td } from "../../styles";
-import Chip from "../../lib/Chip";
-import FlexBox from "../../lib/FlexBox";
+import Chip from "@lib/Chip";
+import FlexBox from "@lib/FlexBox";
 import type { TWorkExperience } from "../../types/workExperience.type";
 
 export const WorkExperienceTable = ({
@@ -13,13 +13,14 @@ export const WorkExperienceTable = ({
   description,
   outcome,
 }: TWorkExperience) => {
+  console.log(techStacks);
   return (
     <section className="subContainer">
       <h2>{name}</h2>
       <Duration duration={duration}></Duration>
-      <FlexBox alignItems="center" gap="12px" mt="12px" flexWrap="wrap">
-        {techStacks.map((techStack) => (
-          <Chip text={techStack} />
+      <FlexBox alignItems="center" gap="8px" mt="12px" flexWrap="wrap">
+        {techStacks.map(({ text, className }) => (
+          <Chip key={text} text={text} />
         ))}
       </FlexBox>
 

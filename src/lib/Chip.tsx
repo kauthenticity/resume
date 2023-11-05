@@ -15,12 +15,15 @@ const StyledChip = styled.div`
   justify-content: center;
   align-items: center;
 
-  padding: 2px 10px;
+  padding: 4px 10px;
   border-radius: 16px;
 
   background: var(--gray100);
-  color: var(--gray600);
-  font-size: 0.9rem;
+  color: var(--gray700);
+  font-size: 0.8rem;
+  line-height: 140%;
+
+  transition: background 0.2s ease;
 
   &:hover {
     background: var(--gray200);

@@ -169,3 +169,28 @@ svg {
 .contact__icon {
   margin: 0;
 }
+
+.chip__react {
+  background-color: #e3f2fb;
+  color: #193347;
+}
+
+.chip__typescript {
+  background-color: #ecf4fe;
+  color: #235a96;
+}
+
+.chip__redux__toolkit {
+  background-color: #e8deee;
+  color: #412454;
+}
+
+.chip__styled__components {
+  background-color: #f4e8ed;
+  color: #4c2337;
+}
+
+.chip__react__query {
+  background-color: #fadec9;
+  color: #4a280d;
+}
