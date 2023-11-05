@@ -82,7 +82,7 @@ export const Project = ({
                       style={{ color: "var(--gray900)" }}
                       key={idx + desc}
                     >
-                      {desc}
+                      \{desc}
                     </li>
                   ))}
                 </ul>

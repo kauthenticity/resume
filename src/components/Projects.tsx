@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import WorkExperienceIcon from "../static/images/WorkExperience.png";
 import SideProjectCard from "./SideProjectCard";
-import { SIDE_PROJECTS_DATA } from "../constants/sideProjects.type";
+import { SIDE_PROJECTS_DATA } from "../constants/sideProjects";
 
 export const Projects = () => {
   return (
