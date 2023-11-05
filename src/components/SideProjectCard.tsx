@@ -1,25 +1,22 @@
 import styled from "styled-components";
 import FlexBox from "../lib/FlexBox";
 import ColoredChip from "../lib/ColoredChip";
-import type { TTechStack } from "../types/SideProjectCard";
+import type { TSideProject } from "../types/SideProjectCard";
 
-type TSideProjectCardProps = {
-  imagePath: string;
-  title: string;
-  description: string;
-  techStacks: TTechStack[];
-} & React.AnchorHTMLAttributes<HTMLAnchorElement>;
+type TSideProjectCardProps = TSideProject &
+  React.AnchorHTMLAttributes<HTMLAnchorElement>;
 
 function SideProjectCard({
   imagePath,
+  url,
   title,
   description,
   techStacks,
   ...props
 }: TSideProjectCardProps) {
   return (
-    <a {...props} target="_blank">
-      <div>
+    <a {...props} href={url} target="_blank" rel="noreferrer">
+      <Container>
         <ImageWrapper>
           <Image src={imagePath} />
         </ImageWrapper>
@@ -38,16 +35,19 @@ function SideProjectCard({
               key={techStack.text}
               text={techStack.text}
               className={techStack.className}
-              style={{ marginBottom: "2px" }}
             />
           ))}
         </FlexBox>
-      </div>
+      </Container>
     </a>
   );
 }
 
 export default SideProjectCard;
+
+const Container = styled.div`
+  margin-bottom: 12px;
+`;
 
 const Description = styled.div`
   margin-top: 2px;
@@ -70,8 +70,10 @@ const Title = styled.div`
 
 const Image = styled.img`
   max-width: 100%;
+  height: 100%;
 
   transition: transform 0.3s ease;
+  object-fit: cover;
   &:hover {
     transform: scale(1.05);
   }

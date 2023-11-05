@@ -8,4 +8,5 @@ export type TSideProject = {
   title: string;
   description: string;
   techStacks: TTechStack[];
+  url: string;
 };

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import WorkExperienceIcon from "../static/images/WorkExperience.png";
 import SideProjectCard from "./SideProjectCard";
-import { SIDE_PROJECTS_DATA } from "../constants/sideProjects";
+import { SIDE_PROJECTS_DATA } from "../constants/sideProjects.type";
 
 export const Projects = () => {
   return (
@@ -25,6 +25,7 @@ const List = styled.ul`
   width: 100%;
 
   display: inline-flex;
+  flex-wrap: wrap;
 
   gap: 12px;
   overflow-x: scroll;
