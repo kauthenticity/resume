@@ -194,3 +194,39 @@ svg {
   background-color: #fadec9;
   color: #4a280d;
 }
+
+.text__grey__900 {
+  color: var(--gray900);
+}
+
+.text__grey__800 {
+  color: var(--gray800);
+}
+
+.text__grey__700 {
+  color: var(--gray700);
+}
+
+.text__grey__600 {
+  color: var(--gray600);
+}
+
+.text__grey__500 {
+  color: var(--gray500);
+}
+
+.text__grey__400 {
+  color: var(--gray400);
+}
+
+.text__grey__300 {
+  color: var(--gray300);
+}
+
+.text__grey__200 {
+  color: var(--gray200);
+}
+
+.text__grey__100 {
+  color: var(--gray100);
+}
