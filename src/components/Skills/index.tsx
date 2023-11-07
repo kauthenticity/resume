@@ -1,5 +1,6 @@
 import {SKILLS_DATA} from '@constants/skills';
 import Divider from '@lib/Divider';
+import List from '@lib/List';
 import Title from '@lib/Title';
 
 function Skills() {
@@ -7,16 +8,11 @@ function Skills() {
         <section>
             <Title text="Skills" />
             {SKILLS_DATA.map(({title, descriptions}) => (
-                <section className="sub__container" key={title}>
+                <div className="sub__container" key={title}>
                     <h2>{title}</h2>
-                    <ul className="list__decoration">
-                        {descriptions.map((desc, index) => (
-                            <li className="list__decoration" key={index}>
-                                {desc}
-                            </li>
-                        ))}
-                    </ul>
-                </section>
+
+                    <List items={descriptions} mt="0.5rem" className="text__grey__700" />
+                </div>
             ))}
             <Divider />
         </section>
