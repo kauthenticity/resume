@@ -61,7 +61,7 @@
                 "message": "Import [module] from lodash/[module] instead"
             }
         ],
-        "no-console": "error",
+        "no-console": "warn",
         "no-restricted-syntax": [
             "error",
             {
