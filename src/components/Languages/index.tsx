@@ -1,9 +1,10 @@
+import Divider from '@lib/Divider';
 import {Duration} from '@lib/Duration';
 import Title from '@lib/Title';
 
 function Languages() {
     return (
-        <section className="container">
+        <section>
             <Title text="Languages" />
 
             <section className="sub__container">
@@ -14,6 +15,8 @@ function Languages() {
                 <h2>OPIc IH</h2>
                 <Duration duration="2023.03.11" />
             </section>
+
+            <Divider />
         </section>
     );
 }

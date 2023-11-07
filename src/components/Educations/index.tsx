@@ -1,10 +1,11 @@
+import Divider from '@lib/Divider';
 import Title from '@lib/Title';
 import {Table, Td} from '@styles';
 import styled from 'styled-components';
 
 function Educations() {
     return (
-        <section className="container">
+        <section>
             <Title text="Educations" />
             <section className="sub__container">
                 <h2>서강대학교 컴퓨터공학과</h2>
@@ -21,6 +22,8 @@ function Educations() {
                     </tbody>
                 </Table>
             </section>
+
+            <Divider />
         </section>
     );
 }

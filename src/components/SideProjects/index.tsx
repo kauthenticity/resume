@@ -1,11 +1,12 @@
 import {SIDE_PROJECTS_DATA} from '@constants/sideProjects';
+import Divider from '@lib/Divider';
 import Title from '@lib/Title';
 import styled from 'styled-components';
 import SideProjectCard from './SideProjectCard';
 
 function SideProjects() {
     return (
-        <section className="container">
+        <section>
             <Title text="Side Projects" />
 
             <List>
@@ -15,6 +16,8 @@ function SideProjects() {
                     </ListItem>
                 ))}
             </List>
+
+            <Divider />
         </section>
     );
 }

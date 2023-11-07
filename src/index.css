@@ -151,10 +151,6 @@ li.button__list:before {
     all: unset;
 }
 
-section.container {
-    margin-bottom: 4rem;
-}
-
 section.sub__container {
     margin-bottom: 2rem;
 }

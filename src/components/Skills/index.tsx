@@ -1,9 +1,10 @@
 import {SKILLS_DATA} from '@constants/skills';
+import Divider from '@lib/Divider';
 import Title from '@lib/Title';
 
 function Skills() {
     return (
-        <section className="container">
+        <section>
             <Title text="Skills" />
             {SKILLS_DATA.map(({name, descriptions}) => (
                 <section className="sub__container" key={name}>
@@ -17,6 +18,7 @@ function Skills() {
                     </ul>
                 </section>
             ))}
+            <Divider />
         </section>
     );
 }

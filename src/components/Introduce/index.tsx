@@ -1,3 +1,4 @@
+import Divider from '@lib/Divider';
 import Contacts from './Contacts';
 import * as Styled from './index.style';
 
@@ -18,6 +19,8 @@ function Introduce() {
             </Styled.Description>
 
             <Contacts />
+
+            <Divider />
         </section>
     );
 }
