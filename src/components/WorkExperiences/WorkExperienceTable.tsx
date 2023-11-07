@@ -1,69 +1,34 @@
-import Chip from '@lib/Chip';
-import {Duration} from '@lib/Duration';
-import FlexBox from '@lib/FlexBox';
+import List from '@lib/List';
 import {Table, Td} from '@styles';
 import type {TWorkExperience} from 'types/data.type';
 
-export function WorkExperienceTable({
-    title,
-    duration,
-    introduce,
-    role,
-    techStacks,
-    descriptions,
-    outcome,
-}: TWorkExperience) {
+export function WorkExperienceTable({introduce, role, descriptions, outcome}: TWorkExperience) {
     return (
-        <section className="sub__container">
-            <h2>{title}</h2>
-            <Duration duration={duration} />
-            <FlexBox alignItems="center" gap="8px" mt="12px" flexWrap="wrap">
-                {techStacks.map(({text}) => (
-                    <Chip key={text} text={text} />
-                ))}
-            </FlexBox>
+        <Table>
+            <tbody>
+                <tr>
+                    <Td className="label">소개</Td>
+                    <Td>{introduce}</Td>
+                </tr>
+                <tr>
+                    <Td className="label">역할</Td>
+                    <Td>{role}</Td>
+                </tr>
 
-            <Table>
-                <tbody>
-                    <tr>
-                        <Td className="label">소개</Td>
-                        <Td>{introduce}</Td>
-                    </tr>
-                    <tr>
-                        <Td className="label">역할</Td>
-                        <Td>{role}</Td>
-                    </tr>
+                <tr>
+                    <Td className="label">상세</Td>
+                    <Td>
+                        <List items={descriptions} mb="0.75rem" />
+                    </Td>
+                </tr>
 
-                    <tr>
-                        <Td className="label">상세</Td>
-                        <Td>
-                            <ul className="list__decoration" style={{margin: 0}}>
-                                {descriptions.map((desc, idx) => (
-                                    <li className="list__decoration" style={{color: 'var(--gray900)'}} key={idx + desc}>
-                                        {desc}
-                                    </li>
-                                ))}
-                            </ul>
-                        </Td>
-                    </tr>
-
-                    <tr>
-                        <Td className="label">성과</Td>
-                        <Td>
-                            <ul className="list__decoration" style={{margin: 0}}>
-                                {outcome.map((outcomeItem, idx) => (
-                                    <li
-                                        className="list__decoration"
-                                        style={{color: 'var(--gray900)'}}
-                                        key={idx + outcomeItem}>
-                                        {outcomeItem}
-                                    </li>
-                                ))}
-                            </ul>
-                        </Td>
-                    </tr>
-                </tbody>
-            </Table>
-        </section>
+                <tr>
+                    <Td className="label">성과</Td>
+                    <Td>
+                        <List items={outcome} mb="0.75rem" />
+                    </Td>
+                </tr>
+            </tbody>
+        </Table>
     );
 }
