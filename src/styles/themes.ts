@@ -6,8 +6,12 @@ export const Table = styled.table`
 `;
 export const Td = styled.td`
     &.label {
-        color: var(--gray600);
         width: 6rem;
+        box-sizing: border-box;
+        padding-left: 0.4rem;
+
+        color: var(--gray500);
+
         vertical-align: top;
     }
     padding: 0.3rem 0;

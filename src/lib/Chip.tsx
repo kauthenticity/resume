@@ -15,12 +15,15 @@ const StyledChip = styled.div`
     justify-content: center;
     align-items: center;
 
-    padding: 4px 10px;
+    padding: 2px 10px;
     border-radius: 16px;
 
     background: var(--gray100);
+
+    font-family: 'Lexend Variable';
     color: var(--gray700);
     font-size: 0.8rem;
+    font-weight: 400;
     line-height: 140%;
 
     transition: background 0.2s ease;

@@ -7,9 +7,9 @@ function App() {
             <Components.Header />
             <main>
                 <Components.Introduce />
-                <Components.Skills />
                 <Components.WorkExperience />
                 <Components.SideProjects />
+                <Components.Skills />
                 <Components.Educations />
                 <Components.Languages />
                 <Components.Etc />
