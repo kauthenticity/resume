@@ -1,12 +1,12 @@
 {
-  "compilerOptions": {
-    "baseUrl": "./src",
-    "paths": {
-      "@lib/*": ["lib/*"],
-      "@components": ["components/index.ts"],
-      "@constants/*": ["constants/*"],
-      "@types/*": ["types/*"],
-      "@styles": ["styles/index.ts"]
+    "compilerOptions": {
+        "baseUrl": "./src",
+        "paths": {
+            "@lib/*": ["lib/*"],
+            "@components": ["components/index.ts"],
+            "@constants/*": ["constants/*"],
+            "@types/*": ["types/*"],
+            "@styles": ["styles/index.ts"]
+        }
     }
-  }
 }

@@ -1,12 +1,12 @@
 export type TTechStack = {
-  className: string;
-  text: string;
+    className: string;
+    text: string;
 };
 
 export type TSideProject = {
-  imagePath: string;
-  title: string;
-  description: string;
-  techStacks: TTechStack[];
-  url: string;
+    imagePath: string;
+    title: string;
+    description: string;
+    techStacks: TTechStack[];
+    url: string;
 };

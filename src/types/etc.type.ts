@@ -1,5 +1,5 @@
 export type TEtc = {
-  title: string;
-  duration: string;
-  descriptions: String[];
+    title: string;
+    duration: string;
+    descriptions: String[];
 };

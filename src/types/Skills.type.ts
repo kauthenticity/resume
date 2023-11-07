@@ -1,4 +1,4 @@
 export type TSkill = {
-  name: string;
-  descriptions: string[];
+    name: string;
+    descriptions: string[];
 };
