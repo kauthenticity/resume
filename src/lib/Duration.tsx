@@ -9,6 +9,8 @@ export function Duration({duration}: TDurationProps) {
 }
 
 const DurationContainer = styled.div`
+    font-size: 0.9rem;
     color: var(--gray600);
-    margin-top: 0.5rem;
+
+    margin-top: 0.3rem;
 `;
