@@ -13,7 +13,6 @@ export const WorkExperienceTable = ({
   description,
   outcome,
 }: TWorkExperience) => {
-  console.log(techStacks);
   return (
     <section className="subContainer">
       <h2>{name}</h2>
