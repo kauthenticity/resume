@@ -9,7 +9,7 @@ function WorkExperience() {
         Experiences
       </h1>
       {WORK_EXPERIENCES_DATA.map((data) => (
-        <WorkExperienceTable {...data} />
+        <WorkExperienceTable key={data.name} {...data} />
       ))}
     </section>
   );
