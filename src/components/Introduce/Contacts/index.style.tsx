@@ -21,7 +21,7 @@ export const List = styled.ul`
 
         font-size: 0.9rem;
         font-weight: 600;
-        color: var(--gray800);
+        color: var(--gray700);
 
         svg {
             color: var(--gray900);
