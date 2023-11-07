@@ -28,6 +28,8 @@ const Container = styled.header`
     max-width: var(--max-width);
     margin: auto;
     background-color: rgba(255, 255, 255, 0.8);
+
+    z-index: 1;
 `;
 const Title = styled.div`
     padding: 1.5rem 0;
