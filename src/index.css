@@ -11,8 +11,9 @@
 }
 
 :root {
-    --main: #f875aa;
-    --main100: #ffdfdf;
+    --main: #427d9d;
+    --main100: #9bbec8;
+    --main900: #164863;
     --gray900: #212121;
     --gray800: #424242;
     --gray700: #616161;

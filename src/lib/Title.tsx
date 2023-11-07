@@ -29,5 +29,5 @@ const Highlight = styled.span`
     right: -15px;
     z-index: -1;
 
-    background: var(--main);
+    background: var(--main100);
 `;
