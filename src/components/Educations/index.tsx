@@ -1,12 +1,11 @@
+import Title from '@lib/Title';
 import {Table, Td} from '@styles';
 import styled from 'styled-components';
 
 function Educations() {
     return (
         <section className="container">
-            <h1>
-                <img className="icon" src="images/Educations.png" alt="" /> Educations
-            </h1>
+            <Title text="Educations" />
             <section className="sub__container">
                 <h2>서강대학교 컴퓨터공학과</h2>
                 <Duration>2018.02 - 2023.02</Duration>

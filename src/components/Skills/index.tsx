@@ -1,12 +1,10 @@
 import {SKILLS_DATA} from '@constants/skills';
+import Title from '@lib/Title';
 
 function Skills() {
     return (
         <section className="container">
-            <h1>
-                <img className="icon" src="images/Strength.png" alt="skill" />
-                Skills
-            </h1>
+            <Title text="Skills" />
             {SKILLS_DATA.map(({name, descriptions}) => (
                 <section className="sub__container" key={name}>
                     <h2>{name}</h2>

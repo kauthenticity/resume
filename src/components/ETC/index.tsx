@@ -1,13 +1,12 @@
 import {ETC_DATA} from '@constants/etc';
 import {Duration} from '@lib/Duration';
+import Title from '@lib/Title';
 import {Table, Td} from '@styles';
 
 function Etc() {
     return (
         <section className="container">
-            <h1>
-                <img className="icon" src="images/Etc.png" alt="" /> Etc.
-            </h1>
+            <Title text="ETC." />
             {ETC_DATA.map(({title, duration, descriptions}, index) => (
                 <section className="sub__container" key={index}>
                     <h2>{title}</h2>

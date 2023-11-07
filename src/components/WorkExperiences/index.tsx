@@ -1,12 +1,11 @@
 import {WORK_EXPERIENCES_DATA} from '@constants/workExerience';
+import Title from '@lib/Title';
 import {WorkExperienceTable} from './WorkExperienceTable';
 
 function WorkExperience() {
     return (
         <section className="container">
-            <h1>
-                <img className="icon" src="/images/WorkExperience.png" alt="" /> Work Experiences
-            </h1>
+            <Title text="Work Experiences" />
             {WORK_EXPERIENCES_DATA.map((data) => (
                 <WorkExperienceTable key={data.name} {...data} />
             ))}

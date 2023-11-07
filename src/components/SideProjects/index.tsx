@@ -1,13 +1,12 @@
 import {SIDE_PROJECTS_DATA} from '@constants/sideProjects';
+import Title from '@lib/Title';
 import styled from 'styled-components';
 import SideProjectCard from './SideProjectCard';
 
 function SideProjects() {
     return (
         <section className="container">
-            <h1>
-                <img className="icon" src="images/SideProjects.png" alt="" /> Side Projects
-            </h1>
+            <Title text="Side Projects" />
 
             <List>
                 {SIDE_PROJECTS_DATA.map((data) => (
