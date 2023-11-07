@@ -36,7 +36,7 @@ body {
     max-width: var(--max-width);
     margin: auto;
     word-break: keep-all;
-    line-height: 1.5em;
+    line-height: 150%;
 }
 
 h1 {
@@ -47,6 +47,8 @@ h1 {
     line-height: 140%;
     display: flex;
     align-items: center;
+
+    margin-block-end: 16px;
 }
 
 h1.introduce {
