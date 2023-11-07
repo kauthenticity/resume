@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Title = styled.h2`
-    margin-top: 1rem;
+    margin-top: 1.6rem;
     margin-bottom: 0.8rem;
 `;
 
