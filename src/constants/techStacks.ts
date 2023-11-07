@@ -1,4 +1,4 @@
-import type {TTechStack} from 'types/SideProjectCard.type';
+import type {TTechStack} from 'types/data.type';
 
 export const TECH_STACKS: {[name in string]: TTechStack} = {
     REACT: {

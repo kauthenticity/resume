@@ -1,5 +1,5 @@
 import {TECH_STACKS} from './techStacks';
-import type {TSideProject} from 'types/SideProjectCard.type';
+import type {TSideProject} from 'types/data.type';
 
 export const SIDE_PROJECTS_DATA: TSideProject[] = [
     {

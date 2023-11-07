@@ -8,7 +8,7 @@ function WorkExperience() {
         <section>
             <Title text="Work Experiences" />
             {WORK_EXPERIENCES_DATA.map((data) => (
-                <WorkExperienceTable key={data.name} {...data} />
+                <WorkExperienceTable key={data.title} {...data} />
             ))}
 
             <Divider />

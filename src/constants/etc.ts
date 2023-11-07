@@ -1,6 +1,6 @@
-import type {TEtc} from 'types/etc.type';
+import type {TData} from 'types/data.type';
 
-export const ETC_DATA: TEtc[] = [
+export const ETC_DATA: TData[] = [
     {
         title: '서강대학교 컴퓨터공학과 부학생회장',
         duration: '2018.11 - 2020.02',

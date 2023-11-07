@@ -2,20 +2,20 @@ import Chip from '@lib/Chip';
 import {Duration} from '@lib/Duration';
 import FlexBox from '@lib/FlexBox';
 import {Table, Td} from '@styles';
-import type {TWorkExperience} from 'types/workExperience.type';
+import type {TWorkExperience} from 'types/data.type';
 
 export function WorkExperienceTable({
-    name,
+    title,
     duration,
     introduce,
     role,
     techStacks,
-    description,
+    descriptions,
     outcome,
 }: TWorkExperience) {
     return (
         <section className="sub__container">
-            <h2>{name}</h2>
+            <h2>{title}</h2>
             <Duration duration={duration} />
             <FlexBox alignItems="center" gap="8px" mt="12px" flexWrap="wrap">
                 {techStacks.map(({text}) => (
@@ -38,7 +38,7 @@ export function WorkExperienceTable({
                         <Td className="label">상세</Td>
                         <Td>
                             <ul className="list__decoration" style={{margin: 0}}>
-                                {description.map((desc, idx) => (
+                                {descriptions.map((desc, idx) => (
                                     <li className="list__decoration" style={{color: 'var(--gray900)'}} key={idx + desc}>
                                         {desc}
                                     </li>

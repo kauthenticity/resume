@@ -10,5 +10,5 @@ export function Duration({duration}: TDurationProps) {
 
 const DurationContainer = styled.div`
     color: var(--gray600);
-    margin-top: 0.75rem;
+    margin-top: 0.5rem;
 `;
