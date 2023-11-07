@@ -2,43 +2,35 @@ import styled from 'styled-components';
 
 export const Title = styled.h2`
     margin-top: 1rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
 `;
 
-export const ListItem = styled.li`
+export const List = styled.ul`
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
 
-    padding-inline-start: 0.25rem;
+    font-family: 'Lexend-Variable';
+    letter-spacing: 0.3px;
 
-    font-size: 0.9rem;
-    line-height: 200%;
-    color: var(--gray700);
+    li {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
 
-    svg {
-        color: var(--gray900);
-        margin-top: 0;
+        margin-right: 3rem;
+
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: var(--gray800);
+
+        svg {
+            color: var(--gray900);
+            margin-top: 0;
+        }
+
+        a {
+            color: currentcolor;
+            text-decoration: underline;
+        }
     }
-
-    a {
-        color: currentcolor;
-
-        transition: color 0.2s ease;
-        &:hover {
-            color: var(--gray600);
-        
-    }
-`;
-
-export const LabelWrapper = styled.div`
-    width: 6rem;
-
-    display: flex;
-    align-items: center;
-    gap: 8px;
-
-    font-family: 'Lexend Variable';
-    letter-spacing: -0.2px;
-    color: var(--gray900);
-    font-weight: 700;
 `;
