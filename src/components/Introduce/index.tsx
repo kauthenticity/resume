@@ -1,21 +1,23 @@
 import ExternalLinkButton from '@lib/ExternalLinkButton';
 import {TbBrandGithub, TbMail} from 'react-icons/tb';
-import styled from 'styled-components';
+import * as Styled from './index.style';
 
 function Introduce() {
     return (
         <section className="container">
-            <h1>
-                더 나은 사용자 경험을 고민하는
+            <h1 className="introduce">
+                <Styled.TitleSpan>더 나은 사용자 경험을 고민하는</Styled.TitleSpan>
                 <br />
-                프론트엔드 개발자 강진실입니다.
+                프론트엔드 개발자, 강진실입니다.
             </h1>
-            <Description>
+            <Styled.Description>
                 기술이 바꾸는 라이프스타일에 관심이 많습니다.
                 <br />
-                누구나 쉽게 읽을 수 있는 코드를 작성하고자 합니다.
-            </Description>
-            <ContactButtonList>
+                유지 보수성과 확장성은 가독성에서 나온다고 믿습니다.
+                <br />
+                문제 상황에서 타협점을 찾기 보다는 해결책을 찾고자 합니다.
+            </Styled.Description>
+            <Styled.ContactButtonList>
                 <li className="button__list">
                     <ExternalLinkButton
                         href="https://github.com/kauthenticity"
@@ -29,24 +31,9 @@ function Introduce() {
                         icon={<TbMail className="contact__icon" size="20px" color="var(--gray50)" strokeWidth="1.75" />}
                     />
                 </li>
-            </ContactButtonList>
+            </Styled.ContactButtonList>
         </section>
     );
 }
 
 export default Introduce;
-
-const Description = styled.div`
-    color: var(--gray700);
-    font-size: 1.125rem;
-    line-height: 160%;
-`;
-
-const ContactButtonList = styled.ul`
-    display: flex;
-    align-items: center;
-    gap: 12px;
-
-    margin-top: 16px;
-    margin-bottom: 0;
-`;
