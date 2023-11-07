@@ -1,5 +1,4 @@
-import ExternalLinkButton from '@lib/ExternalLinkButton';
-import {TbBrandGithub, TbMail} from 'react-icons/tb';
+import Contacts from './Contacts';
 import * as Styled from './index.style';
 
 function Introduce() {
@@ -17,21 +16,8 @@ function Introduce() {
                 <br />
                 문제 상황에서 타협점을 찾기 보다는 해결책을 찾고자 합니다.
             </Styled.Description>
-            <Styled.ContactButtonList>
-                <li className="button__list">
-                    <ExternalLinkButton
-                        href="https://github.com/kauthenticity"
-                        icon={<TbBrandGithub className="contact__icon" size="20px" color="var(--gray50)" />}
-                    />
-                </li>
 
-                <li className="button__list">
-                    <ExternalLinkButton
-                        href="mailto:kauthenticity@gmail.com"
-                        icon={<TbMail className="contact__icon" size="20px" color="var(--gray50)" strokeWidth="1.75" />}
-                    />
-                </li>
-            </Styled.ContactButtonList>
+            <Contacts />
         </section>
     );
 }
