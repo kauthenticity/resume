@@ -4,7 +4,7 @@ function Strength() {
             <h1>
                 <img className="icon" src="images/Strength.png" alt="" /> Strength
             </h1>
-            <section className="subContainer">
+            <section className="sub__container">
                 <h2>흐름을 읽는 능력</h2>
                 <ul>
                     <li>변화를 타인보다 빨리 캐치합니다. 특히 패션, 미디어와 같은 라이프스타일 정보에 민감합니다.</li>
@@ -13,7 +13,7 @@ function Strength() {
                     </li>
                 </ul>
             </section>
-            <section className="subContainer">
+            <section className="sub__container">
                 <h2>깔끔한 코드</h2>
                 <ul>
                     <li>정돈하는 것을 좋아해서, 코드도 깔끔하게 작성하는 것을 지향합니다.</li>

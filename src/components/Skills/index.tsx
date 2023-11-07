@@ -8,7 +8,7 @@ function Skills() {
                 Skills
             </h1>
             {SKILLS_DATA.map(({name, descriptions}) => (
-                <section className="subContainer" key={name}>
+                <section className="sub__container" key={name}>
                     <h2>{name}</h2>
                     <ul className="list__decoration">
                         {descriptions.map((desc, index) => (

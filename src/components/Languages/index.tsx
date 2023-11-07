@@ -6,11 +6,11 @@ function Languages() {
             <h1>
                 <img className="icon" src="images/Languages.png" alt="" /> Languages
             </h1>
-            <section className="subContainer">
+            <section className="sub__container">
                 <h2>TOEIC 935</h2>
                 <Duration duration="2021.08.29" />
             </section>
-            <section className="subContainer">
+            <section className="sub__container">
                 <h2>OPIc IH</h2>
                 <Duration duration="2023.03.11" />
             </section>

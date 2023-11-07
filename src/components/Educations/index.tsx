@@ -7,7 +7,7 @@ function Educations() {
             <h1>
                 <img className="icon" src="images/Educations.png" alt="" /> Educations
             </h1>
-            <section className="subContainer">
+            <section className="sub__container">
                 <h2>서강대학교 컴퓨터공학과</h2>
                 <Duration>2018.02 - 2023.02</Duration>
                 <Table>

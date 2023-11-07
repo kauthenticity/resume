@@ -14,7 +14,7 @@ export function WorkExperienceTable({
     outcome,
 }: TWorkExperience) {
     return (
-        <section className="subContainer">
+        <section className="sub__container">
             <h2>{name}</h2>
             <Duration duration={duration} />
             <FlexBox alignItems="center" gap="8px" mt="12px" flexWrap="wrap">

@@ -9,7 +9,7 @@ function Etc() {
                 <img className="icon" src="images/Etc.png" alt="" /> Etc.
             </h1>
             {ETC_DATA.map(({title, duration, descriptions}, index) => (
-                <section className="subContainer" key={index}>
+                <section className="sub__container" key={index}>
                     <h2>{title}</h2>
                     <Duration duration={duration} />
                     <Table>
