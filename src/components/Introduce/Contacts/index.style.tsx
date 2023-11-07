@@ -31,6 +31,11 @@ export const List = styled.ul`
         a {
             color: currentcolor;
             text-decoration: underline;
+
+            transition: color 0.2s ease;
+            &:hover {
+                color: var(--main);
+            }
         }
     }
 `;
