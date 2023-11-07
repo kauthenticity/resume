@@ -1,6 +1,6 @@
 function Strength() {
     return (
-        <section className="container">
+        <section>
             <h1>
                 <img className="icon" src="images/Strength.png" alt="" /> Strength
             </h1>

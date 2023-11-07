@@ -4,7 +4,7 @@ import * as Styled from './index.style';
 
 function Introduce() {
     return (
-        <section className="container">
+        <section>
             <h1 className="introduce">
                 <Styled.TitleSpan>더 나은 사용자 경험을 고민하는</Styled.TitleSpan>
                 <br />

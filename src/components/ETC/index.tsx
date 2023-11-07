@@ -5,7 +5,7 @@ import Title from '@lib/Title';
 
 function Etc() {
     return (
-        <section className="container">
+        <section>
             <Title text="ETC." />
             {ETC_DATA.map(({title, duration, descriptions}, index) => (
                 <div className="sub__container" key={index}>
