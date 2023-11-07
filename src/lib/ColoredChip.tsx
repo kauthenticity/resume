@@ -11,8 +11,13 @@ function ColoredChip({text, ...props}: TColoredChipProps) {
 export default ColoredChip;
 
 const Container = styled.div`
-    padding: 4px;
+    border-radius: 4px;
+    padding: 2px 4px;
+
+    font-family:
+        Lexend Variable,
+        sans-serif;
+    font-weight: 400;
     font-size: 10px;
     line-height: 100%;
-    border-radius: 4px;
 `;
